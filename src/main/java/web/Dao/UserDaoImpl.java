@@ -18,7 +18,6 @@ public class UserDaoImpl implements UserDao {
     public List<User> AllUsers() {
         String JPAql = "select user from User user";
         return entityManager.createQuery(JPAql, User.class).getResultList();
-
     }
 
     @Override
